@@ -31,10 +31,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/neelindap/pos-js.git"
+    "url": "git://github.com/neel-indap/pos-js.git"
   },
   "bugs": {
-    "url": "https://github.com/neelindap/pos-js/issues"
+    "url": "https://github.com/neel-indap/pos-js/issues"
   },
   "engines": {
     "node": ">=0"
