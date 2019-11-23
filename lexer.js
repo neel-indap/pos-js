@@ -13,8 +13,7 @@ var re = {
   number: /[0-9]*\.[0-9]+|[0-9]+/ig,
   space: /\s+/ig,
   unblank: /\S/,
-  email: /[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](?:\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](?:-?\.?[a-zA-Z0-9])*(?:\.[a-zA-Z](?:-?[a-zA-Z0-9])*)+/gi,
-  urls: /(?:https?:\/\/)(?:[\da-z\.-]+)\.(?:[a-z\.]{2,6})(?:[\/\w\.\-\?#=]*)*\/?/ig,
+  urls: /(?:[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(?:\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?)/ig,
   punctuation: /[\/\.\,\?\!\"\'\:\;\$\(\)\#\’\`]/ig,
   time: /(?:[0-9]|0[0-9]|1[0-9]|2[0-3]):(?:[0-5][0-9])\s?(?:[aApP][mM])/ig
 }
@@ -78,10 +77,10 @@ LexerNode.prototype.toString = function(){
 
 function Lexer(){
   // URLS can contain IDS, so first urls, then ids
-  // then split by then numbers, then whitespace, then email and finally punctuation
-  // this.regexs = [re.urls, re.ids, re.number, re.space, re.email, re.punctuation];
+  // then split by then numbers, then whitespace, and finally punctuation
+  // this.regexs = [re.urls, re.ids, re.number, re.space, re.punctuation];
   this.regexs = [
-    re.urls, re.ids, re.time, re.number, re.space, re.email, re.punctuation
+    re.urls, re.ids, re.time, re.number, re.space, re.punctuation
   ];
 }
 
