@@ -1,5 +1,5 @@
 {
-  "name": "pos",
+  "name": "ni-pos",
   "description": "fasttag part of speech tagger implementation",
   "keywords": [
     "nlp",
@@ -8,13 +8,18 @@
     "jspos",
     "fasttag"
   ],
-  "homepage": "https://github.com/dariusk/pos-js",
+  "homepage": "https://github.com/neel-indap/pos-js",
   "author": "Percy Wegmann",
   "contributors": [
     {
       "name": "Darius Kazemi",
       "email": "darius.kazemi@gmail.com",
       "url": "http://tinysubversions.com"
+    },
+    {
+      "name": "Neel Indap",
+      "email": "neelindap@gmail.com",
+      "url": "http://www.neelindap.com"
     }
   ],
   "version": "0.4.1",
@@ -26,10 +31,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/dariusk/pos-js.git"
+    "url": "git://github.com/neelindap/pos-js.git"
   },
   "bugs": {
-    "url": "https://github.com/dariusk/pos-js/issues"
+    "url": "https://github.com/neelindap/pos-js/issues"
   },
   "engines": {
     "node": ">=0"
