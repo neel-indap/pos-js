@@ -41,5 +41,8 @@
   "devDependencies": {
     "mocha": "~2.1.0",
     "should": "~5.0.1"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/" 
   }
 }
